@@ -36,7 +36,7 @@ function App() {
             <h1>To do List</h1>
             <CreateForm onCreateTask={onCreateTask}/>
             <hr/>
-            <h2>Total:{todos.length}!</h2>
+            <h2>Total:{todos.length}</h2>
             <h3>Done: {todos.filter(el => el.done).length}</h3>
             <h3>Undone: {todos.filter(el => !el.done).length}</h3>
             <ToDolist todos={todos} onDeleteTask={onDeleteTask} onDoneTaskToggle={onDoneTaskToggle}/>
